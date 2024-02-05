@@ -455,7 +455,6 @@ func PostGeoIntersects(mongoenv, dbname, collname string, r *http.Request) strin
 
 	response.Status = true
 	response.Message = GeoIntersects(mconn, collname, coordinate)
-
 	return ReturnStruct(response)
 }
 
